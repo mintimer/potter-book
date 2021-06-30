@@ -14,6 +14,7 @@ public class BookController {
         int[] books = new int[]{book1,book2,book3,book4,book5};
         price = (book1 + book2 + book3 + book4 + book5) * 100;
         int twoDiff = CountTwoDiff(books);
+        price = price - (price * twoDiff * 5/100);
         return price;
     }
 
